@@ -1,0 +1,13 @@
+subprojects {
+    apply plugin: 'war'
+    apply from: 'https://raw.github.com/akhikhl/gretty/master/pluginScripts/gretty.plugin'
+
+    dependencies {
+        providedCompile 'javax:javaee-web-api:7.0'
+        providedCompile 'jstl:jstl:1.2'
+
+    }
+
+
+}
+

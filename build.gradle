@@ -1,0 +1,43 @@
+allprojects {
+    apply plugin: 'java'
+
+    sourceCompatibility = 1.8
+
+    repositories {
+        mavenCentral()
+    }
+}
+
+subprojects {
+
+    dependencies {
+        compile rootProject
+
+        compile 'ch.qos.logback:logback-classic:1.1.3'
+        compile 'org.slf4j:jcl-over-slf4j:1.7.13'
+
+
+        compile('org.springframework:spring-webmvc:4.2.3.RELEASE') {
+            exclude module: 'commons-logging'
+        }
+        compile('org.springframework:spring-orm:4.2.3.RELEASE')
+        compile('org.springframework.data:spring-data-jpa:1.9.1.RELEASE')
+
+        compile('com.h2database:h2:1.4.190')
+
+        compile('org.hibernate:hibernate-entitymanager:5.0.4.Final')
+        compile('org.hibernate:hibernate-validator:5.2.2.Final')
+
+        testCompile 'junit:junit:4.11'
+    }
+}
+
+group 'no.ciber.springhibernatedemo'
+version '1.0-SNAPSHOT'
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '2.7'
+    distributionUrl = "https://services.gradle.org/distributions/gradle-$gradleVersion-all.zip"
+}
+
+

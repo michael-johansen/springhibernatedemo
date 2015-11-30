@@ -1,0 +1,4 @@
+rootProject.name = 'spring-hibernate-demo'
+include 'web', 'web:mvc', 'web:hello', 'web:layered', 'web:exercise'
+include 'console', 'console:dependency-injection', 'console:jdbc', 'console:hibernate'
+
