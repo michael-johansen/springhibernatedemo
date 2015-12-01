@@ -32,7 +32,7 @@ Exercise (1h 30m)
         * TODO-list
         * Timely-clone
 * Run with:
-    * gradlew web:exercise:runApp
+    * gradlew web:exercise:appRun
         * app will -hopefully- start on http://localhost:8080/exercise
 
 
