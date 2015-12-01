@@ -1,7 +1,7 @@
 Agenda
 =======================
 
-Presentation (1h 30m)
+Presentation (2h)
 ----------------------
 * Dependency injection
     * Constructor
