@@ -19,8 +19,8 @@ import java.util.stream.Collectors;
 
 @Controller
 public class MovieController {
-    private Map<Integer, Movie> movies = getInitData();
     private AtomicInteger id = new AtomicInteger(1);
+    private Map<Integer, Movie> movies = getInitData();
 
     @RequestMapping(value = "/", method = RequestMethod.GET)
     public ModelAndView list() {
